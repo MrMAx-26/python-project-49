@@ -24,6 +24,7 @@ def main():
     if i == 4:
         print(f"'{answer}' is wrong answer ;(. Correct answer was " + 
             f"'{correct_answer}'.")
+        print(f"Let's try again, {name}!")
     if i == 3:
         print(f'Congratulations, {name}!')
 
