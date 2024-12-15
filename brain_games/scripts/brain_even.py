@@ -4,10 +4,9 @@
 def main():
     from random import randint
 
-    from brain_games import greeting_in_game
-
     from prompt import string
-    
+
+    from brain_games import greeting_in_game
     name = greeting_in_game.greet_and_get_name()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
