@@ -3,7 +3,9 @@
 
 def main():
     from random import randint
+
     from prompt import string
+
     from brain_games import cli
     print('Welcome to the Brain Games!')
     name = cli.welcome_user()
@@ -20,7 +22,8 @@ def main():
         else:
             i = 4
     if i == 4:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+        print(f"'{answer}' is wrong answer ;(. Correct answer was " + 
+            f"'{correct_answer}'.")
     if i == 3:
         print(f'Congratulations, {name}!')
 
