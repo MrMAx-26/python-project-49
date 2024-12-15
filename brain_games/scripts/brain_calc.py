@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 
 def main():
-    from random import randint
-
-    from random import choice
+    from random import choice, randint
 
     from prompt import string
 
