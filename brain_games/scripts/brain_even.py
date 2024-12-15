@@ -4,11 +4,11 @@
 def main():
     from random import randint
 
-    from prompt import string
+    from brain_games import greeting_in_game
 
-    from brain_games import cli
-    print('Welcome to the Brain Games!')
-    name = cli.welcome_user()
+    from prompt import string
+    
+    name = greeting_in_game.greet_and_get_name()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
     while i < 3:

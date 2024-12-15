@@ -5,9 +5,8 @@ def main():
 
     from prompt import string
 
-    from brain_games import cli
-    print('Welcome to the Brain Games!')
-    name = cli.welcome_user()
+    from brain_games import greeting_in_game
+    name = greeting_in_game.greet_and_get_name()
     operators = ['+', '-', '*']
     print('What is the result of the expression?')
     i = 0
