@@ -6,7 +6,7 @@ def main():
 
     from prompt import string
 
-    from brain_games import greeting_in_game
+    from brain_games import check_correct_answer, greeting_in_game
     name = greeting_in_game.greet_and_get_name()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
@@ -15,11 +15,7 @@ def main():
         correct_answer = 'yes' if is_even(question) else 'no'
         print(f'Question: {question}')
         answer = string('Your answer: ')
-        if correct_answer == answer:
-            print('Correct!')
-            i += 1
-        else:
-            i = 4
+        i = check_correct_answer.check_answer(answer, correct_answer, i)
     if i == 4:
         print(f"'{answer}' is wrong answer ;(. Correct answer was " + 
             f"'{correct_answer}'.")
