@@ -25,3 +25,25 @@ def get_gcd(number1: int, number2: int) -> int:
         if remainder != 0:
             number2 = remainder 
     return number2
+
+
+def is_even(question: int) -> bool:
+    return True if question % 2 == 0 else False
+
+
+def get_correct_math_answer(number1: int, number2: int, operator: str) -> int:
+    if operator == '+':
+        return number1 + number2
+    elif operator == '-':
+        return number1 - number2
+    else:
+        return number1 * number2
+    
+
+def print_result_of_game(answer, correct_answer, name: str, i: int):
+    if i == 4:
+        print(f"'{answer}' is wrong answer ;(. Correct answer was " + 
+            f"'{correct_answer}'.")
+        print(f"Let's try again, {name}!")
+    if i == 3:
+        print(f'Congratulations, {name}!')

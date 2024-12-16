@@ -10,17 +10,8 @@ def play_even_game():
     i = 0
     while i < 3:
         question = randint(0, 100)
-        correct_answer = 'yes' if is_even(question) else 'no'
+        correct_answer = 'yes' if engine.is_even(question) else 'no'
         print(f'Question: {question}')
         answer = string('Your answer: ')
         i = engine.check_answer(answer, correct_answer, i)
-    if i == 4:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was " + 
-            f"'{correct_answer}'.")
-        print(f"Let's try again, {name}!")
-    if i == 3:
-        print(f'Congratulations, {name}!')
-
-
-def is_even(question: int) -> bool:
-    return True if question % 2 == 0 else False
+    engine.print_result_of_game(answer, correct_answer, name, i)

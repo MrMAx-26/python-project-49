@@ -14,9 +14,4 @@ def play_gcd_game():
         answer = int(string('Your answer: '))
         correct_answer = engine.get_gcd(number1, number2)
         i = engine.check_answer(answer, correct_answer, i)
-    if i == 4:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was " + 
-            f"'{correct_answer}'.")
-        print(f"Let's try again, {name}!")
-    if i == 3:
-        print(f'Congratulations, {name}!')
+    engine.print_result_of_game(answer, correct_answer, name, i)
