@@ -1,11 +1,11 @@
 def play_gcd_game():
-    from brain_games import engine
+    from random import randint
 
     from prompt import string
 
-    from random import randint
+    from brain_games import engine
 
-    name  = engine.greet_and_get_name()
+    name = engine.greet_and_get_name()
     print('Find the greatest common divisor of given numbers.')
     i = 0
     while i < 3:
@@ -20,7 +20,6 @@ def play_gcd_game():
         print(f"Let's try again, {name}!")
     if i == 3:
         print(f'Congratulations, {name}!')
-
 
 
 def get_gcd(number1: int, number2: int) -> int:

@@ -4,6 +4,7 @@ def play_calc_game():
     from prompt import string
 
     from brain_games import engine
+
     name = engine.greet_and_get_name()
     operators = ['+', '-', '*']
     print('What is the result of the expression?')
