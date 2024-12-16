@@ -5,8 +5,8 @@ def main():
 
     from prompt import string
 
-    from brain_games import check_correct_answer, greeting_in_game
-    name = greeting_in_game.greet_and_get_name()
+    from brain_games import engine
+    name = engine.greet_and_get_name()
     operators = ['+', '-', '*']
     print('What is the result of the expression?')
     i = 0
@@ -16,7 +16,7 @@ def main():
         print(f'Question: {number1} {operator} {number2}')
         answer = int(string("Your answer: "))
         correct_answer = get_correct_answer(number1, number2, operator)
-        i = check_correct_answer.check_answer(answer, correct_answer, i)
+        i = engine.check_answer(answer, correct_answer, i)
     if i == 4:
         print(f"'{answer}' is wrong answer ;(. Correct answer was " + 
             f"'{correct_answer}'.")
