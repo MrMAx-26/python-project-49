@@ -1,5 +1,5 @@
 Пример установки пакета, запуска игры, победы и поражения игрока:                                                      
-https://asciinema.org/a/F1cmxHAsXWHx1dALZXkYkMR0M 
+https://asciinema.org/a/RdtnkVOh5cHM0od7QeioQXxQ1
  
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MrMAx-26/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MrMAx-26/python-project-49/actions)
