@@ -76,3 +76,12 @@ def hide_element_and_get_correct_answer(progression: list) -> list:
     result.append(progression)
     result.append(correct_answer)
     return result
+
+
+def is_prime(number: int) -> bool:
+    divider = number // 2
+    while divider > 1:
+        if number % divider == 0:
+            return False
+        divider -= 1
+    return True
