@@ -12,7 +12,8 @@ def play_gcd_game():
     print('Find the greatest common divisor of given numbers.')
     i = 0
     while i < 3:
-        number1, number2 = randint(MIN_NUMBER, MAX_NUMBER), randint(MIN_NUMBER, MAX_NUMBER)
+        number1, number2 = randint(MIN_NUMBER, MAX_NUMBER), randint(MIN_NUMBER, 
+            MAX_NUMBER)
         print(f'Question: {number1} {number2}')
         answer = int(string('Your answer: '))
         correct_answer = engine.get_gcd(number1, number2)

@@ -14,7 +14,8 @@ def play_calc_game():
     i = 0
     while i < 3:
         operator = choice(operators)
-        number1, number2 = randint(MIN_NUMBER, MAX_NUMBER), randint(MIN_NUMBER, MAX_NUMBER)
+        number1, number2 = randint(MIN_NUMBER, MAX_NUMBER), randint(MIN_NUMBER, 
+            MAX_NUMBER)
         print(f'Question: {number1} {operator} {number2}')
         answer = int(string("Your answer: "))
         correct_answer = engine.get_correct_math_answer(number1, number2, 
