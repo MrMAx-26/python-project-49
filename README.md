@@ -1,6 +1,17 @@
-Пример установки пакета, запуска игры, победы и поражения игрока:                                                      
+В данном проекте пользователю предлагается сыграть в пять математических игр:
+
+- "Арифметическая прогрессия"
+- "Проверка на четность"
+- "Калькулятор"
+- "НОД"
+- "Простое ли число?"
+
+
+Пример установки пакета, запуска игры, победы и поражения игрока:
+                                                      
 https://asciinema.org/a/XWWcsmYKgEhOq0hRLNWtVolPu
  
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/MrMAx-26/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MrMAx-26/python-project-49/actions)
 
