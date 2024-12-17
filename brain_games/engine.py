@@ -47,3 +47,32 @@ def print_result_of_game(answer, correct_answer, name: str, i: int):
         print(f"Let's try again, {name}!")
     if i == 3:
         print(f'Congratulations, {name}!')
+
+
+def generate_progression() -> list:
+    from random import randint
+
+    PROGRESSION_LEN = 10
+    MAX_D = 10
+    MIN_D = 1
+    MAX_NUMBER = 20
+    MIN_NUMBER = 0
+
+    progression = []
+    progression.append(randint(MIN_NUMBER, MAX_NUMBER))
+    d = randint(MIN_D, MAX_D)
+    for i in range(PROGRESSION_LEN - 1):
+        progression.append(progression[i] + d)
+    return progression
+
+
+def hide_element_and_get_correct_answer(progression: list) -> list:
+    from random import randint
+    
+    result = []
+    element_index = randint(0, len(progression) - 1)
+    correct_answer = progression[element_index]
+    progression[element_index] = '..'
+    result.append(progression)
+    result.append(correct_answer)
+    return result
