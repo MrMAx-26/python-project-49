@@ -7,13 +7,13 @@ def play_calc_game():
     
     MAX_NUMBER = 25
     MIN_NUMBER = 0
+    OPERATORS = ('+', '-', '*')
 
     name = engine.greet_and_get_name()
-    operators = ['+', '-', '*']
     print('What is the result of the expression?')
     i = 0
     while i < 3:
-        operator = choice(operators)
+        operator = choice(OPERATORS)
         number1, number2 = randint(MIN_NUMBER, MAX_NUMBER), randint(MIN_NUMBER, 
             MAX_NUMBER)
         print(f'Question: {number1} {operator} {number2}')
