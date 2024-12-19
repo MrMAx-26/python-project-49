@@ -106,6 +106,11 @@ def get_question(question_text: str) -> str:
         number1, number2 = randint(1, 100), randint(1, 100)
         print(f'Question: {number1} {number2}')
         correct_answer = get_gcd(number1, number2)
+    elif question_text == ('Answer "yes" if given number is prime. '
+        + 'Otherwise answer "no".'):
+        question = randint(2, 100)
+        print(f'Question: {question}')
+        correct_answer = 'yes' if is_prime(question) else 'no'
     return correct_answer
 
 
