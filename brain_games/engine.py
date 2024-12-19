@@ -85,3 +85,25 @@ def is_prime(number: int) -> bool:
             return False
         divider -= 1
     return True
+
+
+def get_question(question_text: str) -> str:
+    from random import randint
+
+    if question_text == ('Answer "yes" if the number is even, '
+        + 'otherwise answer "no".'):
+        question = randint(0, 100)
+        print(f'Question: {question}')
+        correct_answer = 'yes' if is_even(question) else 'no'
+    return correct_answer
+
+
+def run_game(question_text, name): 
+    from prompt import string
+
+    i = 0
+    while i < 3:
+        correct_answer = get_question(question_text)
+        answer = string('Your answer: ')
+        i = check_answer(answer, correct_answer, i)
+    print_result_of_game(answer, correct_answer, name, i)
