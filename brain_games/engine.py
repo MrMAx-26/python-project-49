@@ -111,6 +111,12 @@ def get_question(question_text: str) -> str:
         question = randint(2, 100)
         print(f'Question: {question}')
         correct_answer = 'yes' if is_prime(question) else 'no'
+    else:
+        progression = hide_element_and_get_correct_answer(
+            generate_progression())
+        question = progression[0]
+        print('Question: ' + " ".join([str(i) for i in question]))
+        correct_answer = progression[1]
     return correct_answer
 
 
