@@ -102,6 +102,10 @@ def get_question(question_text: str) -> str:
         number1, number2 = randint(0, 25), randint(0, 25)
         print(f'Question: {number1} {operator} {number2}')
         correct_answer = get_correct_math_answer(number1, number2, operator)
+    elif question_text == 'Find the greatest common divisor of given numbers.':
+        number1, number2 = randint(1, 100), randint(1, 100)
+        print(f'Question: {number1} {number2}')
+        correct_answer = get_gcd(number1, number2)
     return correct_answer
 
 
