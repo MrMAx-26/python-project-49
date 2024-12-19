@@ -88,22 +88,30 @@ def is_prime(number: int) -> bool:
 
 
 def get_question(question_text: str) -> str:
-    from random import randint
+    from random import choice, randint
+
+    OPERATORS = ('+', '-', '*')
 
     if question_text == ('Answer "yes" if the number is even, '
         + 'otherwise answer "no".'):
         question = randint(0, 100)
         print(f'Question: {question}')
         correct_answer = 'yes' if is_even(question) else 'no'
+    elif question_text == 'What is the result of the expression?':
+        operator = choice(OPERATORS)
+        number1, number2 = randint(0, 25), randint(0, 25)
+        print(f'Question: {number1} {operator} {number2}')
+        correct_answer = get_correct_math_answer(number1, number2, operator)
     return correct_answer
 
 
-def run_game(question_text, name): 
+def run_game(question_text, name, tyoe_answer='str'): 
     from prompt import string
 
     i = 0
     while i < 3:
         correct_answer = get_question(question_text)
-        answer = string('Your answer: ')
+        answer = string('Your answer: ') if tyoe_answer == 'str' else int(
+            string('Your answer: '))
         i = check_answer(answer, correct_answer, i)
     print_result_of_game(answer, correct_answer, name, i)

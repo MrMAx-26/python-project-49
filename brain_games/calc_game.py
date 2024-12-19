@@ -1,24 +1,7 @@
 def play_calc_game():
-    from random import choice, randint
-
-    from prompt import string
-
     from brain_games import engine
     
-    MAX_NUMBER = 25
-    MIN_NUMBER = 0
-    OPERATORS = ('+', '-', '*')
-
     name = engine.greet_and_get_name()
-    print('What is the result of the expression?')
-    i = 0
-    while i < 3:
-        operator = choice(OPERATORS)
-        number1, number2 = randint(MIN_NUMBER, MAX_NUMBER), randint(MIN_NUMBER, 
-            MAX_NUMBER)
-        print(f'Question: {number1} {operator} {number2}')
-        answer = int(string("Your answer: "))
-        correct_answer = engine.get_correct_math_answer(number1, number2, 
-            operator)
-        i = engine.check_answer(answer, correct_answer, i)
-    engine.print_result_of_game(answer, correct_answer, name, i)
+    question_text = 'What is the result of the expression?'
+    print(question_text)
+    engine.run_game(question_text, name, tyoe_answer='int')
