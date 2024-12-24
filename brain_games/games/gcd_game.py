@@ -1,6 +1,5 @@
-from typing import Tuple
-
 from random import randint
+from typing import Tuple
 
 from brain_games import engine
 

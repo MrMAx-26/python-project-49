@@ -1,12 +1,12 @@
-from brain_games import engine
-
+from random import randint
 from typing import Tuple
 
-from random import randint
+from brain_games import engine
 
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 RANDOM_GEN_LOW = 0
 RANDOM_GEN_HIGH = 100
+
 
 def play_even_game():
     name = engine.greet_and_get_name()

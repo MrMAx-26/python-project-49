@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
+from brain_games.engine import greet_and_get_name, run_game
 from brain_games.games.even_game import RULES, get_question_and_answer
-from brain_games.engine import run_game, greet_and_get_name
 
 
 def main():

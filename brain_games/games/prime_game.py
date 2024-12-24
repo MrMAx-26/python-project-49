@@ -1,8 +1,7 @@
-from brain_games import engine
-
+from random import randint
 from typing import Tuple
 
-from random import randint
+from brain_games import engine
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 RANDOM_GEN_LOW = 2

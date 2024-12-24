@@ -1,4 +1,4 @@
-from typing import TypeAlias, Callable, Tuple
+from typing import Callable, Tuple, TypeAlias
 
 from prompt import string
 
@@ -14,7 +14,7 @@ def greet_and_get_name():
     return name 
 
 
-def run_game(rules, name, get_question_and_answer:GameLogicFunction):
+def run_game(rules, name, get_question_and_answer: GameLogicFunction):
     print(rules)
     for _ in range(ROUNDS):
         question, correct_answer = get_question_and_answer()
