@@ -19,7 +19,7 @@ def get_question_and_answer() -> Tuple[str, str]:
     answer = get_correct_math_answer(question_number_first, question_number_second, question_operator)
     i += 1
     print(i)
-    return (question, answer)
+    return question, answer
 
 
 def get_correct_math_answer(number1: int, number2: int, operator: str):

@@ -11,13 +11,13 @@ def greet_and_get_name():
 
     print('Welcome to the Brain Games!')
     name = cli.welcome_user()
-    return name
+    return name 
 
 
 def run_game(rules, name, get_question_and_answer:GameLogicFunction):
     print(rules)
     for _ in range(ROUNDS):
-        question, correct_answer = get_question_and_answer
+        question, correct_answer = get_question_and_answer()
         print(question)
         answer = string('Your answer: ')
         if answer != correct_answer:
