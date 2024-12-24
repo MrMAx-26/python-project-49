@@ -11,15 +11,12 @@ OPERATORS = ['+', '-', '*']
 
 
 def get_question_and_answer() -> Tuple[str, str]:
-    i = 0
     question_number_first = randint(RANDOM_GEN_LOW, RANDOM_GEN_HIGH)
     question_number_second = randint(RANDOM_GEN_LOW, RANDOM_GEN_HIGH)
     question_operator = choice(OPERATORS)
     question = f'Question: {question_number_first} {question_operator} {question_number_second}'
     answer = get_correct_math_answer(question_number_first, question_number_second, question_operator)
-    i += 1
-    print(i)
-    return question, answer
+    return (question, answer)
 
 
 def get_correct_math_answer(number1: int, number2: int, operator: str):
