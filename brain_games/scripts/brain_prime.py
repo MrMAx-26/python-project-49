@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 def main():
-    from brain_games import prime_game
+    from brain_games.games import prime_game
 
     prime_game.play_prime_game()
 
