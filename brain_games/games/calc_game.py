@@ -4,7 +4,7 @@ from typing import Tuple
 RULES = 'What is the result of the expression?'
 RANDOM_GEN_LOW = 0
 RANDOM_GEN_HIGH = 25
-OPERATORS = ['+', '-', '*']
+OPERATORS = ('+', '-', '*')
 
 
 def get_question_and_answer() -> Tuple[str, str]:
