@@ -15,5 +15,5 @@
 
 Пример установки пакета, запуска игры, победы и поражения игрока:
 
-[![asciicast](https://asciinema.org/a/cAYFJMK5MtoNGn4sJXQRlLSfD.svg)](https://asciinema.org/a/cAYFJMK5MtoNGn4sJXQRlLSfD)
+[![asciicast](https://asciinema.org/a/Z2xba2H60dnQVrgDISlgcbK3D.svg)](https://asciinema.org/a/Z2xba2H60dnQVrgDISlgcbK3D)
 
